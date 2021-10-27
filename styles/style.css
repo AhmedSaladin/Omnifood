@@ -15,34 +15,7 @@ body {
   color: #555;
 }
 
-.hero-section {
-  background-color: #fdf2e9;
-  padding: 9.6rem 0;
-}
-
-.hero-container {
-  max-width: 130rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
-  align-items: center;
-}
-
-.hero-heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.1;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
-
-.hero-description {
-  font-size: 2rem;
-  line-height: 1.6;
-  margin-bottom: 4.8rem;
-}
+/* General classes */
 
 .btn:link,
 .btn:visited {
@@ -76,6 +49,57 @@ body {
 .btn--outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.mr-sm {
+  margin-right: 1.6rem !important;
+}
+
+/**************************/
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+}
+
+.logo {
+  height: 2.4rem;
+}
+
+/**************************/
+
+/* start of hero section */
+
+.hero-section {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
+.hero-container {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
 }
 
 .deliverd-meals {
@@ -115,6 +139,4 @@ body {
   width: 100%;
 }
 
-.mr-sm {
-  margin-right: 1.6rem !important;
-}
+/**************************/
