@@ -67,10 +67,12 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg);
+  height: 9.6rem;
+  padding: 0 4.8rem;
 }
 
 .logo {
-  height: 2.4rem;
+  height: 2.2rem;
 }
 
 /**************************/
@@ -79,13 +81,14 @@ body {
 
 .hero-section {
   background-color: var(--bg);
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero-container {
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
+  padding: 0 3.2rem;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
   align-items: center;
