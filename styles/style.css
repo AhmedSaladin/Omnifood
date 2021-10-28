@@ -11,8 +11,13 @@ Bold: 700
 
 - Line heights
 Default: 1
-small: 1.05
+Small: 1.05
+Medium:1.2
 Paragraph default: 1.6
+
+- letter spacing
+Small: -0.5px
+Medium: 0.75px
 
 - Colors
  - Primary: #ef67e22
@@ -36,6 +41,8 @@ Default: 9px
 :root {
   --backGroundColor: #fdf2e9;
   --fontColor: #333;
+  --primaryColor: #e67e22;
+  --secondaryColor: #cf711f;
 }
 
 * {
@@ -59,6 +66,29 @@ body {
 /* General classes */
 /**************************/
 
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -72,13 +102,13 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e67e22;
+  background-color: var(--primaryColor);
   color: #fff;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #cf711f;
+  background-color: var(--secondaryColor);
 }
 
 .btn--outline:link,
@@ -95,6 +125,25 @@ body {
 
 .mr-sm {
   margin-right: 1.6rem !important;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--fontColor);
+  letter-spacing: -0.5px;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--secondaryColor);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
 }
 
 /**************************/
@@ -137,12 +186,12 @@ body {
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #cf711f;
+  color: var(--secondaryColor);
 }
 
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
-  background-color: #e67e22;
+  background-color: var(--primaryColor);
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
@@ -150,7 +199,7 @@ body {
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
-  background-color: #cf711f;
+  background-color: var(--secondaryColor);
 }
 
 /**************************/
@@ -216,7 +265,7 @@ body {
 }
 
 .deliverd-text span {
-  color: #cf711f;
+  color: var(--secondaryColor);
   font-weight: 700;
 }
 
@@ -225,3 +274,13 @@ body {
 }
 
 /**************************/
+/* How it work section */
+/**************************/
+
+.how-section {
+  padding: 9.6rem 0;
+}
+
+.step-img {
+  width: 50%;
+}
