@@ -127,13 +127,10 @@ body {
   margin-right: 1.6rem !important;
 }
 
-.heading-secondary {
-  font-size: 4.4rem;
+.heading{
   font-weight: 700;
-  line-height: 1.2;
   color: var(--fontColor);
   letter-spacing: -0.5px;
-  margin-bottom: 9.6rem;
 }
 
 .subheading {
