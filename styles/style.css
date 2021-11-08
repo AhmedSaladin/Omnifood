@@ -188,17 +188,28 @@
   justify-content: center;
 }
 
-.step-img-box::before {
+.step-img-box::before,
+.step-img-box::after {
   position: absolute;
   content: "";
   display: block;
-  background-color: var(--backGroundColor);
-  width: 60%;
-  padding-bottom: 60%;
+  border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 50%;
+}
+
+.step-img-box::before {
+  background-color: var(--backGroundColor);
+  width: 60%;
+  padding-bottom: 60%;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  background-color: #fae5d3;
+  width: 45%;
+  padding-bottom: 45%;
   z-index: -1;
 }
 
