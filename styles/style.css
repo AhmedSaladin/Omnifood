@@ -182,9 +182,24 @@
 }
 
 .step-img-box {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.step-img-box::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: var(--backGroundColor);
+  width: 60%;
+  padding-bottom: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .step-img {
