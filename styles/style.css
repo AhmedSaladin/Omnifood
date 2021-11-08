@@ -176,9 +176,15 @@
   margin-bottom: 3.2rem;
 }
 
-.step-description{
+.step-description {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .step-img {
