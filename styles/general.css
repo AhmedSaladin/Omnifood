@@ -90,6 +90,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid-center-v {
+  align-items: center;
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -128,7 +132,7 @@ body {
   margin-right: 1.6rem !important;
 }
 
-.heading{
+.heading {
   font-weight: 700;
   color: var(--fontColor);
   letter-spacing: -0.5px;
